@@ -18,6 +18,8 @@ nodemailer.createTestAccount((err, account) => {
           pass: account.pass
       }
   });
+  console.log(account.smtp.host);
+
 
   // Message object
   let message = {

@@ -1,0 +1,52 @@
+//Hoisting
+
+console.log(foo);   //foo will get hoisted at top with undefined value
+var foo = 'foo';  //Assigning value to foo.
+console.log(foo);  //Foo variable got re-assigned thus logging latest value of foo.
+
+
+Variables declared with let and const are hoisted but not assigned. UNLIKE VAR , in which when variables are hoisted they are assigned with value 'undefined'.
+
+console.log(Ben)
+let Ben = 'ben'
+
+In above block of code, Ben variable is hoisted but it is initiallized later it's use. Hence error is can't access before initialization.
+If we used a variable which is never initiallized, the error will be VARIABLE IS NOT DEFINED.
+
+TDZ - Temporal Dead Zone:
+
+The TDZ starts at the beginning of variables enclosing sope and ends when variable is initiallized or declared.
+Example:
+{
+ 	// Start of foo's TDZ
+  	let bar = 'bar';
+	console.log(bar); // "bar"
+
+	console.log(foo); // ReferenceError because we're in the TDZ
+
+	let foo = 'foo';  // End of foo's TDZ
+}
+
+TDZ in functions:
+
+function foobar(foo = bar, bar = 'bar') {
+  console.log(foo);
+}
+foobar(); // Uncaught ReferenceError: Cannot access 'bar' before initialization.
+
+Function Hoisting in JS:
+
+Function declarations are hoisted, too. Function hoisting allows us to call a function before it is defined. For example, the following code runs successfully and outputs "foo":
+
+foo(); // "foo"
+
+function foo() {
+	console.log('foo');
+}
+
+Note that only function declaratins are hoisted and not function expressions.
+
+
+
+
+
