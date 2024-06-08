@@ -5,6 +5,34 @@
 // let num1 = 5;
 // let num2 = 7;
 
+// const operate = (op,num1,num2)=>{
+//     switch(op){
+//         case "+":
+//             console.log(`Addiion of ${num1} and ${num2} is ${num1+num2}.`);
+//             break;
+//         case "-":
+//             console.log(`Subtraction of ${num1} and ${num2} is ${num1-num2}.`);
+//             break;
+//         case "*":
+//             console.log(`Multiplication of ${num1} and ${num2} is ${num1*num2}.`);
+//             break;
+//         case "/":
+//             console.log(`Division of ${num1} and ${num2} is ${num1/num2}`);
+//             break;
+//         case "%":
+//             console.log(`Remainder of ${num1} and ${num2} is ${num1%num2}.`);
+//             break;
+//         case "**":
+//             console.log(`${num1} to the power of ${num2} is ${num1**num2}.`);
+//             break;
+//         default :
+//             return "Invalid input."
+//     }
+// }
+
+// operate("+",num1,num2);
+
+
 // result = num1 + num2;
 // console.log(`Addiion of ${num1} and ${num2} is ${result}.`);
 
@@ -54,42 +82,42 @@
 
 //Comaprison operator - Check wheteher user is eligible fo voting or not.
 
-let persons = []
-let country_list = ['USA','UK','Canada','India'];
+// let persons = []
+// let country_list = ['USA','UK','Canada','India'];
 
-for(let i=1;i<=30;i++){
-    let person = {
-        age : Math.round(Math.random()*100),
-        nation: country_list[Math.round(Math.random()*3)]
-    }
-    persons.push(person)
-}
+// for(let i=1;i<=30;i++){
+//     let person = {
+//         age : Math.round(Math.random()*100),
+//         nation: country_list[Math.round(Math.random()*3)]
+//     }
+//     persons.push(person)
+// }
 
 
-for(person of persons){
-    if(person.age >= 18 && person.nation === 'India'){
-        console.log("User can vote.")
-    }else if (person.age >= 18 || person.nation === 'India'){
-        console.log("either user is under age or not the resident of India.")
-    }else{
-        console.log("User is not eligible for voting.")
-    }
-}
+// for(person of persons){
+//     if(person.age >= 18 && person.nation === 'India'){
+//         console.log("User can vote.")
+//     }else if (person.age >= 18 || person.nation === 'India'){
+//         console.log("either user is under age or not the resident of India.")
+//     }else{
+//         console.log("User is not eligible for voting.")
+//     }
+// }
 
-console.log("Using while loop -")
+// console.log("Using while loop -")
 
-let len = persons.length
-let i=0
+// let len = persons.length
+// let i=0
 
-while(i<=len-1){
-    if(persons[i].age >= 18 && persons[i].nation === 'India'){
-        console.log("User can vote.")
-    }else if (persons[i].age >= 18 || persons[i].nation === 'India'){
-        console.log("either user is under age or not the resident of India.")
-    }else{
-        console.log("User is not eligible for voting.")
-    }
-    len--;
-    i++;
-}
+// while(i<=len-1){
+//     if(persons[i].age >= 18 && persons[i].nation === 'India'){
+//         console.log("User can vote.")
+//     }else if (persons[i].age >= 18 || persons[i].nation === 'India'){
+//         console.log("either user is under age or not the resident of India.")
+//     }else{
+//         console.log("User is not eligible for voting.")
+//     }
+//     len--;
+//     i++;
+// }
 
