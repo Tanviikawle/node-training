@@ -20,6 +20,8 @@ function circumference(radius){
 // console.log(`Area is ${area(radius)} ,diameter is ${diameter(radius)} and lastly circumference is ${circumference(radius)}.`)
 
 //Using anonumyous function or function expression.
+
+
 const areaOfCircle = function(radius){
     res = (Math.PI * radius * radius).toFixed(3);
     // console.log(res);
