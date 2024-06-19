@@ -26,7 +26,6 @@ $(document).ready(function () {
     //     //  $('.class').hide();
     // },
     // function (){
-
     //     console.log('Thanks for coming')
     // });
 
@@ -64,7 +63,6 @@ $(document).ready(function () {
             },
             mouseleave: function () {
                 console.log("mouseleave");
-
             }
         })
 
