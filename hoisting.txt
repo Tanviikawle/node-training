@@ -45,8 +45,3 @@ function foo() {
 }
 
 Note that only function declaratins are hoisted and not function expressions.
-
-
-
-
-
