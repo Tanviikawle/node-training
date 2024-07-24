@@ -399,4 +399,61 @@
 // }
 // console.log(res2[3])
 
-//
+// 22) JavaScript program that takes an array with mixed data type and calculates the sum of all numbers.
+
+// const arr = [2, 3, 0, 5, 7, 8, true, false];
+// var sum = 0
+
+// for(let i in arr){
+//     if(typeof arr[i] == 'number'){
+//         sum = sum + arr[i];
+//     }
+// }
+
+// console.log(sum)
+
+// 23) JavaScript program to get all the indexes where NaN is found in a given array of numbers and NaN.
+
+// let arr = [2, 4, NaN, 16, 32, NaN];
+// let indexArray = [];
+
+// for(let a in arr){
+//     if(isNaN(arr[a])){
+//         indexArray.push(a);
+//     }
+// }
+// console.log(indexArray)
+
+// 24) Check if an array contains prime number or not.
+// const arr = [2,3,5,8,7];
+// let flag = false;
+
+// for(let n in arr){
+//     let temp = 2;
+//     while(temp<n){
+//         if(n % temp == 0 ){
+//             flag = true;
+//             break;
+//         }
+//         temp++;
+//     }
+//     if(flag) break;
+// }
+// console.log(flag)
+
+// 25) Check whether array or string is palindrome or not
+
+// let arr = [5,4,3,4,4,5];
+// let start = 0;
+// let last = arr.length-1
+// let half = Math.round(arr.length/2);
+// let flag = true;
+// while(start<=half){
+//     if(arr[start] != arr[last-start]){
+//         flag = false;
+//         break;
+//     }
+//     start++;
+// }
+// console.log(flag);
+
