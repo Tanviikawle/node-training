@@ -13,13 +13,13 @@ const timeZones = [
 function getTimeZones(){
     const timestamp = new Date();
     let displayDate;
-    let times = '';
+    let times = ''
     for(time in timeZones){
         displayDate = Intl.DateTimeFormat('en-GB',{
             hour: "numeric",
             minute: "numeric",
             second: "numeric",
-            hour12: false,
+            // hour12: false,
             timeZone : timeZones[time]
         }).format(timestamp);
         times += displayDate ;
